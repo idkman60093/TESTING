@@ -82,7 +82,7 @@ task.spawn(function()
         Bar.Size = UDim2.new(i/100,0,1,0)
         task.wait(0.03)
     end
-    Text.Text = "Doors Modes Hub V25 Loaded!"
+    Text.Text = "Doors Modes Hub Testing Loaded!"
     task.wait(0.5)
     ScreenGui:Destroy()
 end)
