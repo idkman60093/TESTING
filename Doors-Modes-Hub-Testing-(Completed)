@@ -1,0 +1,90 @@
+--// Rectangle Rainbow Loading UI by RealblueYT
+
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+-- UI
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "LoadingUI"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.Parent = playerGui
+
+-- Rainbow Border Frame (Outer)
+local Outer = Instance.new("Frame")
+Outer.Size = UDim2.new(0.55,0,0.18,0)
+Outer.Position = UDim2.new(0.225,0,0.41,0)
+Outer.BackgroundColor3 = Color3.fromRGB(255,0,0)
+Outer.BorderSizePixel = 0
+Outer.Parent = ScreenGui
+
+local OuterCorner = Instance.new("UICorner", Outer)
+OuterCorner.CornerRadius = UDim.new(0,28)
+
+-- Inner Box (Dark)
+local Box = Instance.new("Frame")
+Box.Size = UDim2.new(0.97,0,0.88,0)
+Box.Position = UDim2.new(0.015,0,0.06,0)
+Box.BackgroundColor3 = Color3.fromRGB(15,15,15)
+Box.BorderSizePixel = 0
+Box.Parent = Outer
+
+local BoxCorner = Instance.new("UICorner", Box)
+BoxCorner.CornerRadius = UDim.new(0,24)
+
+-- Text %
+local Text = Instance.new("TextLabel")
+Text.Size = UDim2.new(1,0,0.4,0)
+Text.Position = UDim2.new(0,0,0.05,0)
+Text.BackgroundTransparency = 1
+Text.Text = "Loading 0%"
+Text.TextColor3 = Color3.fromRGB(255,255,255)
+Text.TextScaled = true
+Text.Font = Enum.Font.GothamBold
+Text.Parent = Box
+
+-- Loading Bar BG
+local BarBG = Instance.new("Frame")
+BarBG.Size = UDim2.new(0.9,0,0.25,0)
+BarBG.Position = UDim2.new(0.05,0,0.6,0)
+BarBG.BackgroundColor3 = Color3.fromRGB(35,35,35)
+BarBG.BorderSizePixel = 0
+BarBG.Parent = Box
+
+local BarBGCorner = Instance.new("UICorner", BarBG)
+BarBGCorner.CornerRadius = UDim.new(0,15)
+
+-- Loading Bar (Blue)
+local Bar = Instance.new("Frame")
+Bar.Size = UDim2.new(0,0,1,0)
+Bar.Position = UDim2.new(0,0,0,0)
+Bar.BackgroundColor3 = Color3.fromRGB(0,170,255)
+Bar.BorderSizePixel = 0
+Bar.Parent = BarBG
+
+local BarCorner = Instance.new("UICorner", Bar)
+BarCorner.CornerRadius = UDim.new(0,15)
+
+-- Rainbow Border Effect
+task.spawn(function()
+    local hue = 0
+    while ScreenGui.Parent do
+        hue += 0.003
+        if hue > 1 then hue = 0 end
+        Outer.BackgroundColor3 = Color3.fromHSV(hue,1,1)
+        task.wait(0.01)
+    end
+end)
+
+-- Loading Effect
+task.spawn(function()
+    for i = 1,100 do
+        Text.Text = "Loading "..i.."%"
+        Bar.Size = UDim2.new(i/100,0,1,0)
+        task.wait(0.03)
+    end
+    Text.Text = "Doors Modes Hub V25 Loaded!"
+    task.wait(0.5)
+    ScreenGui:Destroy()
+end)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/idkman60093/TESTING/refs/heads/main/Doors-Modes-Hub-Testing?token=GHSAT0AAAAAADSLE7BTHETKCVWBP57EKUU22NQDA6A"))()
