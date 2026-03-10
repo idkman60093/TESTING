@@ -87,4 +87,4 @@ task.spawn(function()
     ScreenGui:Destroy()
 end)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/idkman60093/TESTING/refs/heads/main/Doors-Modes-Hub-Testing?token=GHSAT0AAAAAADSLE7BT4EVK6COKSTLS7JOK2NQDK4A"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/idkman60093/TESTING/refs/heads/main/Doors-Modes-Hub-Testing"))()
