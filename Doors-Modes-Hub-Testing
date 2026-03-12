@@ -1,5 +1,5 @@
 wait(4.95)
-game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<b><font color='rgb(180, 0, 255)'>Doors Modes Hub V25 Loaded!</font></b>")
+game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<b><font color='rgb(180, 0, 255)'>Doors Modes Hub Testing Loaded!</font></b>")
 wait(1.5)
 game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<b><font color='rgb(180, 0, 255)'>Made By Rip_Silence (#idkman06483)</font></b>")
 wait(1.5)
@@ -117,6 +117,10 @@ Section:NewButton("Devil Mode (Fixed)", "Fixed by Smile & Tuffmu Chicken Boy🔥
 loadstring(game:HttpGet("https://raw.githubusercontent.com/datdoors/Devilmodefixed.main/refs/heads/main/Devilmodefixed"))()
 end)
 
+Section:NewButton("Rooms Mode", "Made by Gab", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/WLjeQQWm"))()
+end)
+
 Section:NewButton("Anarchy Mode", "Released By Anctarus7105", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Recreated-modes/refs/heads/main/Anarchy%20Release"))()
 end)
@@ -191,6 +195,10 @@ print("[Loaded Successfully]")
 end
 end)
 
+Section:NewButton("Gab's Fragmented Mode (Kinda Broken)", "Made By Gab", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/nMgH5Jwa"))()
+end)
+
 Section:NewButton("Immersive Mode (Remake)", "Remake by RealblueYT", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rrealblueyt-oss/immersive-remake/refs/heads/main/Immersive-remake-loaded-localplayer-Origin-script.lua"))()
 end)
@@ -255,8 +263,12 @@ Section:NewButton("Hard Mode V4 (Recaptured)", "Credit to RealblueYT", function(
 loadstring(game:HttpGet("https://arch-http.vercel.app/files/Projecthradmodev4byrealblueyt"))()
 end)
 
-Section:NewButton("Gab's Hardcore Mode", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/idkman60093/Gabs-Hardcore-Mode/refs/heads/main/Gab's%20Hardcore%20Mode"))()
+Section:NewButton("Gab's Hardcore Mode (MultiPlayer)", "Made By Gab", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/b9jTt9zi"))()
+end)
+
+Section:NewButton("Gab's Hardcore Mode (SinglePlayer)", "Made by Gab", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/jTrCetvx"))()
 end)
 
 Section:NewButton("Silence Mode V3", "Made By Rip_Silence", function()
@@ -331,6 +343,10 @@ Section:NewButton("Chaos Mode V1 (Hardcore Version)", "Credit to DJ SD (Tunder84
 loadstring(game:HttpGet("https://raw.githubusercontent.com/idkman60093/Chaos-Mode-Hardcore-Version/refs/heads/main/Chaos%20Mode%20V1%20(Hardcore%20Version)"))()
 end)
 
+Section:NewButton("The Mines Mode", "Made by Gab", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Hgn6DarS"))()
+end)
+
 Section:NewButton("Nightmare Mode", "Made by Kodbol", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/kodbolx/kodbolhub/refs/heads/main/Nightmare%20Mode/Nightmare%20Mode.lua"))()
 end)
@@ -349,6 +365,10 @@ end)
 
 Section:NewButton("Stryker Mode", "Made by Rip_Silence", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/idkman60093/Doors-Modes/refs/heads/main/Stryker-Mode-(Fully-Completed)"))()
+end)
+
+Section:NewButton("Impossible Mode (Alpha)", "Made by RealBlueYT", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/realbluedeptrainhat/Impossible-alpha-/refs/heads/main/impossible%20alpha.txt", true))()
 end)
 
 Section:NewButton("Hardcore Mode (Remastered)", "Credit to someone that idk", function()
@@ -455,8 +475,16 @@ usewhileloading = false,
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Sc-Rhyan57/MsProject/refs/heads/main/projects/DOORS-SPRINT.lua"))()
 end)
 
+Section:NewButton("Hotel- Gui (Only Works In Hotel-)", "Made by someone that idk", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/En0eCsJd"))()
+end)
+
 Section:NewButton("Simple Script Loader", "Credit to someone that idk", function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-DAILY-RUNS-Simple-Script-Loader-92632"))()
+end)
+
+Section:NewButton("Dev Admin Panel (Need Admin Panel)", "Credit to Gab", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Tp7M4r2H"))()
 end)
 
 Section:NewButton("Add Secret Entity", "Credit to Rip_Silence", function()
@@ -814,6 +842,10 @@ end)
 
 Section:NewButton("Guestly's Old Doors Modes Hub", "Credit to Guestly (Celestian)", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GuestlyTheGreatestGuest/Modes/refs/heads/main/My%20old%20hub%20that%20died"))()
+end)
+
+Section:NewButton("Guestly's New Doors Modes Hub", "Made by Guestly (Celestian)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Guestly/Modes/refs/heads/main/DOORS-MODES-HUB"))()
 end)
 
 Section:NewButton("Doors Modes Hub V1 (Oldest Version??)", "Oldest Version Of Doors Modes Hub???", function()
@@ -1344,11 +1376,20 @@ local Section = Tab:NewSection("---Update Logs---")
 
 local Section = Tab:NewSection("1. Updated THE OVERDOORS to its better version In Extra Section")
 local Section = Tab:NewSection("2. Updated Improbable Mode Final Version (IMPOSSIBLE⚠️⚠️⚠️")
-local Section = Tab:NewSection("3. Added Helping Jack In Extra Section")
-local Section = Tab:NewSection("4. Added Ringer Mode In Modes Section")
-local Section = Tab:NewSection("5. Added Ringer Mode (Remake) In Modes Section")
-local Section = Tab:NewSection("6. Added Voidness Mode V2 In Modes Section")
-local Section = Tab:NewSection("7. Removed Old Voidness Mode In Modes Section")
+local Section = Tab:NewSection("3. Updated Gab's Hardcore Mode (MultiPlayer) In Modes Section")
+local Section = Tab:NewSection("4. Added Helping Jack In Extra Section")
+local Section = Tab:NewSection("5. Added Ringer Mode In Modes Section")
+local Section = Tab:NewSection("6. Added Ringer Mode (Remake) In Modes Section")
+local Section = Tab:NewSection("7. Added Voidness Mode V2 In Modes Section")
+local Section = Tab:NewSection("8. Removed Old Voidness Mode In Modes Section")
+local Section = Tab:NewSection("9. Added Impossible Mode (Alpha) In Modes Section")
+local Section = Tab:NewSection("10. Added Guestly's New Doors Modes Hub In Other Script Section")
+local Section = Tab:NewSection("11. Added Dev Admin Panel (Need Admin Panel) In Extra Section")
+local Section = Tab:NewSection("12. Added Gab's Hardcore Mode (SinglePlayer) In Modes Section")
+local Section = Tab:NewSection("13. Added Gab's Fragmented Mode In Modes Section")
+local Section = Tab:NewSection("14. Added Hotel- Gui (Only Works In Hotel-) In Extra Section")
+local Section = Tab:NewSection("15. Added The Mines Mode In Modes Section")
+local Section = Tab:NewSection("16. Added Rooms Mode In Modes Section")
 
 local Tab = Window:NewTab("😄Credits😄")
 
